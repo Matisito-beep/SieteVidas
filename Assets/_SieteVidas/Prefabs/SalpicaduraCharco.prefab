@@ -9562,7 +9562,7 @@ GameObject:
   - component: {fileID: 3655534939648197250}
   - component: {fileID: 5704433433843175113}
   m_Layer: 0
-  m_Name: Water_blast_blue
+  m_Name: SalpicaduraCharco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
