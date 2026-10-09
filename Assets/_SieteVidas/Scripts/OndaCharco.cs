@@ -1,8 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-// Hace que un disco transparente crezca y se desvanezca sobre el charco,
-// como una onda en el agua cuando cae una gota.
+
 public class OndaCharco : MonoBehaviour
 {
     [Header("Tamaño")]
@@ -11,7 +10,7 @@ public class OndaCharco : MonoBehaviour
 
     [Header("Tiempo")]
     public float duracion = 1.2f;
-    [Tooltip("Espera aleatoria entre ondas, para que no salgan todas juntas")]
+    
     public float esperaMinima = 0.5f;
     public float esperaMaxima = 2.5f;
 
@@ -30,7 +29,7 @@ public class OndaCharco : MonoBehaviour
         StartCoroutine(RutinaOndas());
     }
 
-    // Corrutina: repite la onda para siempre, con pausas al azar
+    // repite la onda para siempre, con pausas al azar
     private IEnumerator RutinaOndas()
     {
         while (true)

@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 
-// Controla el estado del nivel: vidas, pescados, tiempo y fin del juego.
 public class GestorJuego : MonoBehaviour
 {
     public static GestorJuego Instancia { get; private set; }
@@ -34,7 +33,6 @@ public class GestorJuego : MonoBehaviour
 
     void Start()
     {
-        // Cuenta automaticamente cuantos pescados hay en la escena
         TotalPescados = FindObjectsByType<PescadoColeccionable>(FindObjectsSortMode.None).Length;
 
         AlCambiarVidas?.Invoke(Vidas);

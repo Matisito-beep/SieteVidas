@@ -1,19 +1,18 @@
 using System.Collections;
 using UnityEngine;
 
-// Maneja los golpes que recibe el gato, la invulnerabilidad temporal
-// (con parpadeo) y la reaparicion al caer.
+
 [RequireComponent(typeof(CharacterController))]
 public class SaludJugador : MonoBehaviour
 {
     [Header("Referencias")]
-    [Tooltip("El contenedor visual del gato (CatVisual)")]
+ 
     public Transform visual;
 
     [Header("Invulnerabilidad")]
-    [Tooltip("Segundos sin recibir golpes despues de uno")]
+    
     public float tiempoInvulnerabilidad = 1.5f;
-    [Tooltip("Cada cuantos segundos parpadea")]
+   
     public float intervaloParpadeo = 0.1f;
 
     public bool EsInvulnerable { get; private set; }
@@ -71,7 +70,7 @@ public class SaludJugador : MonoBehaviour
         controladorPersonaje.enabled = true;
     }
 
-    // Corrutina: el gato parpadea y no recibe golpes por unos segundos
+    // el gato parpadea y no recibe golpes por unos segundos
     private IEnumerator RutinaInvulnerabilidad()
     {
         EsInvulnerable = true;

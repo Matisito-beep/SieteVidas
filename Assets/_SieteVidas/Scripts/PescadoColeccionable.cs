@@ -44,7 +44,7 @@ public class PescadoColeccionable : MonoBehaviour
         StartCoroutine(RutinaRecoger());
     }
 
-    // Corrutina: se encoge y sube antes de desaparecer
+    // se encoge y sube antes de desaparecer
     private IEnumerator RutinaRecoger()
     {
         Vector3 escalaInicial = transform.localScale;

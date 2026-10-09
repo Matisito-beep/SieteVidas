@@ -4,9 +4,9 @@ using UnityEngine;
 public class Obstaculo : MonoBehaviour
 {
     [Header("Efecto al golpear (opcional)")]
-    [Tooltip("Prefab de particulas que aparece donde esta el gato al recibir el golpe")]
+
     public GameObject efectoGolpe;
-    [Tooltip("Segundos antes de borrar el efecto")]
+
     public float duracionEfecto = 2f;
 
     void Awake()
