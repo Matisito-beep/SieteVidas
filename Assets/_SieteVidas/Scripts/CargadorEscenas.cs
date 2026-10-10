@@ -26,6 +26,12 @@ public class CargadorEscenas : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
+        else
+        {
+            // En el nivel, el mouse queda bloqueado al centro y oculto
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 
 
